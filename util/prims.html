@@ -52,23 +52,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a
-              class="nav-item nav-link"
-              href="../main.html"
+            <a class="nav-item nav-link" href="../index.html"
               >DFS <span class="sr-only">(current)</span></a
             >
-            <a class="nav-item nav-link active" href="./prims.html"
-              >Prims</a
-            >
-            <a class="nav-item nav-link" href="./kruskals.html"
-              >Kruskals</a
-            >
-            <a class="nav-item nav-link" href="./bst.html"
-              >Binary Tree</a
-            >
-            <a class="nav-item nav-link" href="./rec.html"
-              >Recursive</a
-            >
+            <a class="nav-item nav-link active" href="./prims.html">Prims</a>
+            <a class="nav-item nav-link" href="./kruskals.html">Kruskals</a>
+            <a class="nav-item nav-link" href="./bst.html">Binary Tree</a>
+            <a class="nav-item nav-link" href="./rec.html">Recursive</a>
           </div>
         </div>
       </nav>
@@ -78,19 +68,36 @@
         <div class="left"></div>
         <div class="right">
           <h2>Randomized Prim's Algorithm</h2>
-          <p id="para" style=" color: #D2D2D2; margin-left: 7px;">
-            Prim’s approaches the problem from a different angle. Rather than working edgewise across the entire graph, it starts at one point, and grows outward from that point. The standard version of the algorithm works something like this:
+          <p id="para" style="color: #d2d2d2; margin-left: 7px">
+            Prim’s approaches the problem from a different angle. Rather than
+            working edgewise across the entire graph, it starts at one point,
+            and grows outward from that point. The standard version of the
+            algorithm works something like this:
           </p>
-            <ul>
-            <li>Choose an arbitrary vertex from G (the graph), and add it to some (initially empty) set V.</li>
-            <li>Choose the edge with the smallest weight from G, that connects a vertex in V with another vertex not in V.</li>
-            <li>Add that edge to the minimal spanning tree, and the edge’s other vertex to V.</li>
+          <ul>
+            <li>
+              Choose an arbitrary vertex from G (the graph), and add it to some
+              (initially empty) set V.
+            </li>
+            <li>
+              Choose the edge with the smallest weight from G, that connects a
+              vertex in V with another vertex not in V.
+            </li>
+            <li>
+              Add that edge to the minimal spanning tree, and the edge’s other
+              vertex to V.
+            </li>
             <li>Repeat steps 2 and 3 until V includes every vertex in G.</li>
-            </ul>
-          <p id="para2" style=" color: #d2d2d2; margin-left: 7px;">
-            And the result is a minimal spanning tree of G. Straightforward enough!<br><br>
+          </ul>
+          <p id="para2" style="color: #d2d2d2; margin-left: 7px">
+            And the result is a minimal spanning tree of G. Straightforward
+            enough!<br /><br />
 
-With one little change, it becomes a suitable method for generating mazes: just change step 2 so that instead of selecting the edge with the smallest weight, you select an edge at random, as long as it bridges the so-called “frontier” of the maze (the set of edges that move from within the maze, to a cell that is outside the maze).
+            With one little change, it becomes a suitable method for generating
+            mazes: just change step 2 so that instead of selecting the edge with
+            the smallest weight, you select an edge at random, as long as it
+            bridges the so-called “frontier” of the maze (the set of edges that
+            move from within the maze, to a cell that is outside the maze).
           </p>
           <button id="go">Start!</button>
           <div class="gridsize">
