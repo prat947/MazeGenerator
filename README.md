@@ -2,7 +2,11 @@
 Maze Generation Visualizer.
 Select Grid Size and press Start to begin the animation.
 1. DFS ALGORITHM
+
+
 https://user-images.githubusercontent.com/83540720/180612598-a1a3d0c1-36e0-4849-b595-5333c97ac0ff.mov
+
+
 
 2. PRIM'S ALGORITHM
 https://user-images.githubusercontent.com/83540720/180612691-a3798394-4a93-4855-bf86-471a998fa608.mov
